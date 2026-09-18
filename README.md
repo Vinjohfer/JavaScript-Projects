@@ -1,2 +1,3 @@
 # JavaScript-Projects
-Coursework assignments and exercises
+This repository contains all JavaScipt coursework assignments and exercises.
+
