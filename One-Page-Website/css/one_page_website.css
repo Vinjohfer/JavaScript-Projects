@@ -1,0 +1,219 @@
+/* one_page_website.css */
+
+body {
+background-color: rgb(146, 113, 154);
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 24px;
+color: darkslategray;
+}
+
+h1 {
+color: mediumturquoise;
+font-family: Georgia, serif;
+}
+
+/* Contact Form */
+form input[type="text"] {
+width: 20%;
+margin: 5px;
+border: 2px solid peachpuff;
+border-radius: 7px;
+}
+
+form input[type="email"] {
+width: 20%;
+margin: 5px;
+border: 2px solid peachpuff;
+border-radius: 7px;
+}
+
+textarea {
+width: 40%;
+border: 2px solid peachpuff;
+border-radius: 7px;
+}
+
+/* Gallery Row Layout */
+.row {
+display: flex;
+width: 100%;
+}
+
+.row > .column {
+padding: 0 8px;
+}
+
+.column {
+flex: 1;
+box-sizing: border-box;
+}
+
+/* Gallery Images */
+.hover-shadow {
+transition: 0.3s;
+cursor: pointer;
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+
+.hover-shadow {
+box-shadow:
+0 4px 8px 0 rgba(0, 0, 0, 0.4),
+0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Modal Background */
+.modal {
+display: none;
+position: fixed;
+z-index: 999;
+padding-top: 50px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #222;
+margin: auto;
+padding: 0;
+width: 70%;
+max-width: 900px;
+}
+
+/* Modal Images */
+.mySlides {
+display: none;
+}
+
+.mySlides img {
+display: block;
+width: 100%;
+max-height: 600px;
+object-fit: contain;
+}
+
+/* Close Button */
+.close {
+color: #fff;
+position: absolute;
+top: 15px;
+right: 35px;
+font-size: 40px;
+font-weight: bold;
+cursor: pointer;
+z-index: 1000;
+}
+
+.close,
+.close {
+color: #bbb;
+text-decoration: none;
+}
+
+/* Previous and Next Buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 24px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+text-decoration: none;
+}
+
+/* Next Button */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* Button Hover */
+.prev,
+.next {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide Number */
+.numbertext {
+color: #f2f2f2;
+font-size: 14px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+z-index: 5;
+}
+
+/* Caption */
+.caption-container {
+text-align: center;
+background-color: black;
+padding: 10px 16px;
+color: white;
+font-size: 16px;
+}
+
+/* Thumbnail Row */
+.thumbnail-row {
+display: flex;
+background-color: #111;
+}
+
+/* Thumbnails */
+.demo {
+width: 33.33%;
+height: 100px;
+object-fit: cover;
+opacity: 0.6;
+cursor: pointer;
+}
+
+.demo {
+opacity: 1;
+}
+
+/* Active Thumbnail */
+.active {
+opacity: 1;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 700px) {
+
+.row {
+    display: block;
+}
+
+.column {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modal-content {
+    width: 95%;
+}
+
+.hover-shadow {
+    height: auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+textarea {
+    width: 80%;
+}
+
+}
