@@ -1,5 +1,4 @@
 # JavaScript-Projects
-JavaScript Course Projects
 A collection of projects I completed while learning and practicing JavaScript. Each project helped me work with different programming concepts and build interactive web applications.
 
 Projects
